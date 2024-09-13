@@ -24,7 +24,7 @@ function City() {
     function () {
       getCity(id, setHasDisplayCity);
     },
-    [id]
+    [id, getCity]
   );
 
   if (hasDisplayCity) return <Spinner />;
